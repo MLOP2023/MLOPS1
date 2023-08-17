@@ -8,7 +8,7 @@ features = ['SepalLengthCm','SepalWidthCm','PetalLengthCm','PetalWidthCm']
 target = 'Species'
 
 
-X_train, X_test, y_train, y_test = train_test_split(df[features],df[target] , test_size=0.1, shuffle=True)
+X_train, X_test, y_train, y_test = train_test_split(df[features],df[target] , test_size=0.15, shuffle=True)
 #step-1: initialise the model class
 clf = DecisionTreeClassifier(criterion="entropy") #Information gain as criteria
 #step-2: train the model on training set
